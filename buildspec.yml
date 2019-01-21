@@ -6,6 +6,7 @@ phases:
       - echo "install"
   pre_build:
     commands:
+      - $(aws --version)
       - $(aws ecr get-login --no-include-email)
   build:
     commands:
