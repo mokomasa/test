@@ -14,5 +14,4 @@ phases:
       - docker tag ${IMAGE_REPO_NAME}:latest ${REPOSITORY_URI}
   post_build:
     commands:
-      - docker --help
       - docker push ${REPOSITORY_URI}:latest
