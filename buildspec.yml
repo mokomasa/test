@@ -11,6 +11,6 @@ phases:
   build:
     commands:
       - docker build -t ${REPOSITORY_URI}:latest .
-  # post_build:
-  #   commands:
-  #     - docker push ${REPOSITORY_URI}:latest
+  post_build:
+    commands:
+      - docker push ${REPOSITORY_URI}:latest
